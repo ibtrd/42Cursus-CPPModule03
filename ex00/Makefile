@@ -6,7 +6,7 @@
 #    By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/13 22:47:55 by ibertran          #+#    #+#              #
-#    Updated: 2024/08/13 23:05:32 by ibertran         ###   ########lyon.fr    #
+#    Updated: 2024/08/14 14:33:37 by ibertran         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,13 +26,19 @@ DEPS = $(patsubst %.o,%.d,$(OBJS))
 
 SRC = \
 	main \
+
+CLASSES_DIR = Classes/
+CLASSES = \
 	ClapTrap \
+
+SRC += $(patsubst %,$(CLASSES_DIR)%,$(CLASSES))
 
 # *** LIBRARIES && INCLUDES  ************************************************* #
 
 INCS_DIR = incs/
 INCS = \
 	$(INCS_DIR) \
+	$(SRCS_DIR)$(CLASSES_DIR) \
 
 # *** CONFIG ***************************************************************** #
 
