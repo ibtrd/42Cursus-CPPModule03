@@ -6,18 +6,21 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 22:48:39 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 12:17:00 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 14:51:43 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-
 #include <iostream>
+
+#include "ClapTrap.hpp"
 
 /* CONSTRUCTORS ************************************************************* */
 
-ClapTrap::ClapTrap(void)
-: _name("unnamed"), _hitPts(10), _energyPts(10), _attackDmg(0)
+ClapTrap::ClapTrap(void) :
+	_name(INIT_NAME),
+	_hitPts(INIT_HITPTS),
+	_energyPts(INIT_ENERGYPTS),
+	_attackDmg(INIT_ATTACKDMG)
 {
 	std::cout 
 		<< "\e[34mClaptrap\e[0m " << this->_name
@@ -32,8 +35,11 @@ ClapTrap::ClapTrap(const ClapTrap &other)
 	*this = other;
 }
 
-ClapTrap::ClapTrap(const std::string &str)
-: _name(str), _hitPts(10), _energyPts(10), _attackDmg(0)
+ClapTrap::ClapTrap(const std::string &str) :
+	_name(str),
+	_hitPts(INIT_HITPTS),
+	_energyPts(INIT_ENERGYPTS),
+	_attackDmg(INIT_ATTACKDMG)
 {
 	std::cout 
 		<< "\e[34mClaptrap\e[0m " << this->_name

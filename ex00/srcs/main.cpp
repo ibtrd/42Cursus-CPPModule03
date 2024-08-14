@@ -6,12 +6,13 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 23:02:21 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 14:10:33 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 14:40:14 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
 #include <iostream>
+
+#include "ClapTrap.hpp"
 
 int main(void)
 {
