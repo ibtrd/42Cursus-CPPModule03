@@ -6,7 +6,7 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 22:48:39 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 14:51:43 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 16:51:13 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,12 @@
 /* CONSTRUCTORS ************************************************************* */
 
 ClapTrap::ClapTrap(void) :
-	_name(INIT_NAME),
-	_hitPts(INIT_HITPTS),
-	_energyPts(INIT_ENERGYPTS),
-	_attackDmg(INIT_ATTACKDMG)
+	_name(CLAPTRAP_BASE_NAME),
+	_hitPts(CLAPTRAP_BASE_HITPTS),
+	_energyPts(CLAPTRAP_BASE_ENERGYPTS),
+	_attackDmg(CLAPTRAP_BASE_ATTACKDMG)
 {
-	std::cout 
-		<< "\e[34mClaptrap\e[0m " << this->_name
-		<< " default constructor called" << std::endl;
+	std::cout << "\e[34mClaptrap\e[0m default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap &other)
@@ -37,9 +35,9 @@ ClapTrap::ClapTrap(const ClapTrap &other)
 
 ClapTrap::ClapTrap(const std::string &str) :
 	_name(str),
-	_hitPts(INIT_HITPTS),
-	_energyPts(INIT_ENERGYPTS),
-	_attackDmg(INIT_ATTACKDMG)
+	_hitPts(CLAPTRAP_BASE_HITPTS),
+	_energyPts(CLAPTRAP_BASE_ENERGYPTS),
+	_attackDmg(CLAPTRAP_BASE_ATTACKDMG)
 {
 	std::cout 
 		<< "\e[34mClaptrap\e[0m " << this->_name

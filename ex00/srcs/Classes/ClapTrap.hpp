@@ -6,7 +6,7 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 22:48:16 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 14:48:31 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 15:21:09 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 # include <string>
 
-# define INIT_NAME "unnamed"
-# define INIT_HITPTS 10
-# define INIT_ENERGYPTS 10
-# define INIT_ATTACKDMG 0
+# define CLAPTRAP_BASE_NAME "unnamed"
+# define CLAPTRAP_BASE_HITPTS 10
+# define CLAPTRAP_BASE_ENERGYPTS 10
+# define CLAPTRAP_BASE_ATTACKDMG 0
 
 class ClapTrap
 {
