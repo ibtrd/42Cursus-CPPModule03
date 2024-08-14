@@ -6,7 +6,7 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 14:41:23 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 17:36:22 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 21:48:52 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ class FragTrap : public ClapTrap
 
 		FragTrap	&operator=(const FragTrap &);
 
-		void		attack(const std::string& target);
 		void		highFivesGuys(void);
 };
 
