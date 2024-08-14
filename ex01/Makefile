@@ -6,11 +6,11 @@
 #    By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/13 22:47:55 by ibertran          #+#    #+#              #
-#    Updated: 2024/08/14 14:33:37 by ibertran         ###   ########lyon.fr    #
+#    Updated: 2024/08/14 15:34:57 by ibertran         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ClapTrap
+NAME = ScavTrap
 
 # *** FILES ****************************************************************** #
 
@@ -30,6 +30,7 @@ SRC = \
 CLASSES_DIR = Classes/
 CLASSES = \
 	ClapTrap \
+	ScavTrap \
 
 SRC += $(patsubst %,$(CLASSES_DIR)%,$(CLASSES))
 

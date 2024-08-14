@@ -6,7 +6,7 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 22:48:16 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 14:50:56 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 15:46:24 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 # include <string>
 
-# define INIT_NAME "unnamed"
-# define INIT_HITPTS 100
-# define INIT_ENERGYPTS 50
-# define INIT_ATTACKDMG 20
+# define CLAPTRAP_BASE_NAME "unnamed"
+# define CLAPTRAP_BASE_HITPTS 100
+# define CLAPTRAP_BASE_ENERGYPTS 50
+# define CLAPTRAP_BASE_ATTACKDMG 20
 
 class ClapTrap
 {
-	private:
+	protected:
 		std::string		_name;
 		unsigned int	_hitPts;
 		unsigned int	_energyPts;
@@ -35,11 +35,11 @@ class ClapTrap
 
 		~ClapTrap(void);
 
-		ClapTrap	&operator=(const ClapTrap &);
+		ClapTrap		&operator=(const ClapTrap &);
 
-		void		attack(const std::string& target);
-		void		takeDamage(unsigned int amount);
-		void		beRepaired(unsigned int amount);
+		virtual void	attack(const std::string& target);
+		void			takeDamage(unsigned int amount);
+		void			beRepaired(unsigned int amount);
 };
 
 #endif /* ******************************************************************* */

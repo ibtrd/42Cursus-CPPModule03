@@ -6,7 +6,7 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 14:41:23 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 14:45:14 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 16:48:35 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <string>
 
 # include "ClapTrap.hpp"
+
+# define SCAVTRAP_BASE_NAME "unnamed"
+# define SCAVTRAP_BASE_HITPTS 100
+# define SCAVTRAP_BASE_ENERGYPTS 50
+# define SCAVTRAP_BASE_ATTACKDMG 20
 
 class ScavTrap : public ClapTrap
 {
@@ -29,6 +34,9 @@ class ScavTrap : public ClapTrap
 		~ScavTrap(void);
 
 		ScavTrap	&operator=(const ScavTrap &);
+
+		void		attack(const std::string& target);
+		void		guardGate(void);
 };
 
 #endif /* ******************************************************************* */

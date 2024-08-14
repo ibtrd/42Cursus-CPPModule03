@@ -31,6 +31,8 @@
 *.out
 *.app
 ex00/ClapTrap
+ex01/ScavTrap
 
 # Misc
+.vscode
 */.vscode
