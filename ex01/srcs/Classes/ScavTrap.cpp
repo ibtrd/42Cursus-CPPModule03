@@ -6,7 +6,7 @@
 /*   By: ibertran <ibertran@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 14:41:42 by ibertran          #+#    #+#             */
-/*   Updated: 2024/08/14 15:48:11 by ibertran         ###   ########lyon.fr   */
+/*   Updated: 2024/08/14 17:48:47 by ibertran         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,9 @@ void	ScavTrap::attack(const std::string &target)
 
 void	ScavTrap::guardGate(void)
 {
+	if (!this->_hitPts)
+		return;
+	
 	std::cout 
 		<< "\e[33mScavTrap\e[0m " << this->_name
 		<< " has entered gatekeeper mode" << std::endl;
